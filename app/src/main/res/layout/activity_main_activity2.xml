@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.michal.wisielec.MainActivity2Activity"
+    android:background="@color/black">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dodaj hasło"
+        android:id="@+id/dodajH"
+        android:textSize="80px"
+        android:textColor="@color/white"
+        android:padding="20px"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dodajH"
+        android:textSize="80px"
+        android:background="@color/white"
+        android:padding="10px"
+        android:id="@+id/editor"
+        android:maxLength="20"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wybierz kategorie :"
+        android:id="@+id/wybKat"
+        android:textSize="80px"
+        android:textColor="@color/white"
+        android:padding="20px"
+        android:layout_below="@+id/editor"
+        />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wybKat"
+        android:textColor="@color/white"
+        android:id="@+id/grupaRadioKat"
+        android:padding="20px">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sport"
+            android:textColor="@color/white"
+            android:id="@+id/radioSport"
+            android:checked="true"
+            android:textSize="80px"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kraj"
+            android:textColor="@color/white"
+            android:id="@+id/radioKraj"
+            android:textSize="80px"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Zwierzęta"
+            android:textColor="@color/white"
+            android:id="@+id/radioZwierze"
+            android:textSize="80px"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GANG ALBANI"
+            android:textColor="@color/white"
+            android:id="@+id/radioAlbania"
+            android:textSize="80px"/>
+
+
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="80px"
+        android:id="@+id/wyslij"
+        android:text="Wyślij"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:onClick="nowaPozycja"
+
+        />
+
+
+
+
+</RelativeLayout>
